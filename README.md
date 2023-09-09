@@ -1,6 +1,7 @@
 # Project Name
 
 Identifying Constitutive Parameters for Complex Hyperelastic Solids using Physics-Informed Neural Networks
+v1.0.0
 
 ## Table of Contents
 
@@ -50,7 +51,8 @@ In hte real
 
 ## Contributing
 
-Siyuan Song, Hanxun Jin developed this code in 2013.
+Siyuan Song, Hanxun Jin developed this code in 2023. The website is currently maintained and updated by Siyuan Song.
+
 Please cite:
 Siyuan Song, Hanxun Jin. Identifying Constitutive Parameters for Complex Hyperelastic Solids using Physics-Informed Neural Networks. 2023
 
