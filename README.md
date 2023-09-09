@@ -24,7 +24,6 @@ The current code can help to extract the elastic modulus from the loading curve 
   
   ![Diagram of the PINNs](\Figure\Figure-1.png)
 
-
 - Figure-2
   
   ![Forward_Problem](\Figure\Figure-2.png)
