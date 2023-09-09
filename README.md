@@ -22,7 +22,7 @@ The current repository provides the basic code for the deepmodulus (PINNs based 
 The current code can help to extract the elastic modulus from the loading curve and digital image correlation.
 - Figure-1
   
-  ![Diagram of the PINNs](\Figure\Figure-1.png)
+  ![Diagram of the PINNs](/Figure/Figure-1.png)
 
 - Figure-2
   
