@@ -26,23 +26,27 @@ The current code can help to extract the elastic modulus from the loading curve 
 
 ## Getting Started
 
-Provide instructions on how to get started with your project. This should include information on prerequisites and installation.
+In the current section, I will present a quick example about how to run the Deepmodulus code.
 
 ### Prerequisites
 
-The current code is developed based on Python 3.7.0. The main package needed is  Deepxde 1.7.0. which is available on the website https://deepxde.readthedocs.io/en/latest/user/installation.html. Please check it for the detailed instructions of installation. All the packages the author currently uses is given in the file "TF-2.5.yaml". For the best performance, please set the GPU environment for Tensorflow.
+The current code is developed based on Python 3.7.0. The main package needed is Deepxde 1.7.0. which is available on the website https://deepxde.readthedocs.io/en/latest/user/installation.html. Please check the website for the installation details. In addition, all the packages the author currently uses is given in the file "TF-2.5.yaml". Please install the GPU environment for tensorflow to accelerate the calculation.
 
 ### Installation
 
 Step 1:
 Install the Deepxde 1.7.0.
 Step 2:
-Go to the repository of the deepxde. Replace the “booundary_conditions.py” with the boundary conditions provided. This new boundary_conditions added three more boundary conditions
+Go to the repository of the deepxde. Replace the “booundary_conditions.py” with the boundary conditions provided. 
 
 ## Usage
 
-Here, we will provide an example of 
-Provide examples or documentation on how to use your project. Include code snippets or screenshots if necessary.
+### For the pregiven calculation Case.
+The current example provided here is based on the section 3.3 in the references. To run the code, please download the folder "Data", "Template" and the file "Run.py", and put them in the same folder. In "Run.py", you could set the noise value of speckle data, the number of epochs, the number of speckles and the number of tests you want to make.
+
+### For any calculation case.
+In hte real 
+
 
 ## Contributing
 
