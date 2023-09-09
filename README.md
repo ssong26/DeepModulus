@@ -22,7 +22,7 @@ The current repository provides the basic code for the deepmodulus (PINNs based 
 List the main features or functionalities of your project.
 
 - Feature 1
-  ![Diagram of the PINNs](image/Figure-1/jpg)
+  ![Diagram of the PINNs](Figure/Figure-1.png)
 - Feature 2
   
 - Feature 3
