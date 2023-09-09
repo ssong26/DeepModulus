@@ -26,15 +26,15 @@ The current code can help to extract the elastic modulus from the loading curve 
 
 - Figure-2
   
-  ![Forward_Problem](\Figure\Figure-2.png)
+  ![Forward_Problem](/Figure/Figure-2.png)
 
 - Figure-3
   
-  ![Inverse_Problem_without_DIC](\Figure\Figure-3.png)
+  ![Inverse_Problem_without_DIC](/Figure/Figure-3.png)
 
 - Figure-4
   
-  ![Inverse_Problem_with_DIC](\Figure\Figure-4.png)
+  ![Inverse_Problem_with_DIC](/Figure/Figure-4.png)
 
 ## Getting Started
 
