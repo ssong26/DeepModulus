@@ -17,15 +17,16 @@ Identifying Constitutive Parameters for Complex Hyperelastic Solids using Physic
 
 The current repository provides the basic code for the deepmodulus (PINNs based material parameter identification code). The code aim to extract the elastic parameters of the hyperelastic material from the loading test and the digital image correlation.
 
-Please feel free to contact the 
-
 ## Features
 
 List the main features or functionalities of your project.
 
 - Feature 1
+  
 - Feature 2
+  
 - Feature 3
+  
 
 ## Getting Started
 
