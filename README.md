@@ -42,11 +42,21 @@ Go to the repository of the deepxde. Replace the “booundary_conditions.py” w
 
 ## Usage
 
-### For the pregiven calculation Case.
+### For the example.
 The current example provided here is based on the section 3.3 in the references. To run the code, please download the folder "Data", "Template" and the file "Run.py", and put them in the same folder. In "Run.py", you could set the noise value of speckle data, the number of epochs, the number of speckles and the number of tests you want to make.
 
-### For any calculation case.
-In hte real 
+### For other application with artificial experimental data (FEM)
+
+### For other application with the real experimental data.
+For any other application, 
+
+Step-1:
+
+Step-2：
+
+Step-3:
+
+Step-4:
 
 
 ## Contributing
