@@ -16,22 +16,23 @@ v1.0.0
 
 ## About
 
-The current repository provides the basic code for the deepmodulus (PINNs based material parameter identification code). The code aim to extract the elastic parameters of the hyperelastic material from the loading test and the digital image correlation.
+The present repository offers foundational code for deepmodulus, a codebase centered on the use of Physics-Informed Neural Networks (PINNs) for material parameter identification. Its primary objective is to facilitate the extraction of elastic parameters governing hyperelastic materials by leveraging loading tests and digital image correlation.
+
 
 ## Features
 
-The current code can help to extract the elastic modulus from the loading curve and digital image correlation.
+The existing code serves as a valuable tool for extracting the elastic modulus of hyperelastic materials through the analysis of both the loading curve and digital image correlation.
 - Figure-1
   
   ![Diagram of the PINNs](/Figure/Figure-1.png)
 
 ## Getting Started
 
-In the current section, I will present a quick example about how to run the Deepmodulus code.
+In this section, I will provide a brief example demonstrating the execution of the Deepmodulus code.
 
 ### Prerequisites
 
-The current code is developed based on Python 3.7.0. The main package needed is Deepxde 1.7.0. which is available on the website https://deepxde.readthedocs.io/en/latest/user/installation.html. Please check the website for the installation details. In addition, all the packages the author currently uses is given in the file "TF-2.5.yaml". Please install the GPU environment for tensorflow to accelerate the calculation.
+The current code is developed based on Python 3.7.0. The main package needed is Deepxde 1.7.0. which is available on the [website](https://deepxde.readthedocs.io/en/latest/user/installation.html). Please check the website for the installation details. In addition, all the packages the author currently uses is given in the file "TF-2.5.yaml". Please install the GPU environment for tensorflow to accelerate the calculation.
 
 ### Installation
 
