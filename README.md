@@ -53,7 +53,7 @@ The current example provided here is based on the section 3.3 in the references.
 Siyuan Song, Hanxun Jin developed this code in 2023. The website is currently maintained and updated by Siyuan Song.
 
 Please cite:
-Siyuan Song, Hanxun Jin. Identifying Constitutive Parameters for Complex Hyperelastic Solids using Physics-Informed Neural Networks. 2023. (https://arxiv.org/pdf/2308.15640.pdf)
+Siyuan Song, Hanxun Jin. "Identifying Constitutive Parameters for Complex Hyperelastic Solids using Physics-Informed Neural Networks." arXiv preprint arXiv:2308.15640 (2023). (https://arxiv.org/pdf/2308.15640.pdf)
 
 
 For any questions, please contact
