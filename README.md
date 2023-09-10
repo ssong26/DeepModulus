@@ -37,6 +37,8 @@ The code is presently developed using Python 3.7.0 as its foundation, with the p
 
 Step 1:
 Install the Deepxde 1.7.0.
+
+
 Step 2:
 Go to the repository of the deepxde package. Replace the “boundary_conditions.py” with the new “boundary_conditions.py” provided. In the new file, we replace the "periodic boundary condition" to the "integration boundary condition" and the "Robin boundary condition" to the "operator boundary condition for the given pointset.
 
@@ -45,8 +47,10 @@ Go to the repository of the deepxde package. Replace the “boundary_conditions.
 The existing code is designed to work with a rectangular sample containing multiple spherical inhomogeneities. For a comprehensive understanding of its functionalities and capabilities, you can refer to the paper authored by Siyuan Song and Hanxun Jin in 2023, [Siyuan Song, Hanxun Jin (2023)](https://arxiv.org/pdf/2308.15640.pdf). Importantly, it is worth noting that the current code is easily adaptable to accommodate complex structures featuring arbitrary inhomogeneities.
 
 ### For the example.
-The current example provided here is based on the section 3.3 in the references. To run the code, please download the folder "Data", "Template" and the file "Run.py", and put them in the same folder. In "Run.py", you could set the noise value of speckle data, the number of epochs, the number of speckles and the number of tests you want to make. The training speed is about 50 epochs/second. During the trainning, you could see a file "variable_history", which prints the material parameters as a function of the trainning epochs. 
+The provided example is based on section 3.3 in the referenced source. To execute the code, you'll need to download three components: the "Data" folder, the "Template" folder, and the "Run.py" file. Place all of these items into the same directory. Next, open your Python terminal and input "python Run.py" to initiate the computation. Within the "Run.py" file, you have the flexibility to adjust several parameters, including the speckle data's noise level, the number of epochs, the quantity of speckles, and the number of tests you wish to conduct. It's worth noting that the training process operates at an approximate speed of 50 epochs per second on a Alienware m15 R7 personal laptop. While training is in progress, you can monitor the "variable_history" file, which tracks the evolution of material parameters throughout the training epochs.
 
+
+In addition, a "Odb_Post_Processing_Deepxde.py" file is provided for you to export the FEM data when you are working on some other application.
 
 ## Contributing
 
