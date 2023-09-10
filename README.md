@@ -1,7 +1,6 @@
 # Project Name
 
-Identifying Constitutive Parameters for Complex Hyperelastic Solids using Physics-Informed Neural Networks
-v1.0.0
+Identifying Constitutive Parameters for Complex Hyperelastic Solids using Physics-Informed Neural Networks(v1.0.0)
 
 ## Table of Contents
 
@@ -32,18 +31,18 @@ In this section, I will provide a brief example demonstrating the execution of t
 
 ### Prerequisites
 
-The current code is developed based on Python 3.7.0. The main package needed is Deepxde 1.7.0. which is available on the [website](https://deepxde.readthedocs.io/en/latest/user/installation.html). Please check the website for the installation details. In addition, all the packages the author currently uses is given in the file "TF-2.5.yaml". Please install the GPU environment for tensorflow to accelerate the calculation.
+The code is presently developed using Python 3.7.0 as its foundation, with the primary requirement being Deepxde 1.7.0, which can be found on the [official website](https://deepxde.readthedocs.io/en/latest/user/installation.html). Detailed installation instructions can be accessed on the website. Furthermore, the "TF-2.5.yaml" file provides a comprehensive list of all the packages employed by the author. To expedite calculations, it is recommended to install a GPU environment for TensorFlow.
 
 ### Installation
 
 Step 1:
 Install the Deepxde 1.7.0.
 Step 2:
-Go to the repository of the deepxde. Replace the “booundary_conditions.py” with the boundary conditions provided. 
+Go to the repository of the deepxde package. Replace the “boundary_conditions.py” with the new “boundary_conditions.py” provided. In the new file, we replace the "periodic boundary condition" to the "integration boundary condition" and the "Robin boundary condition" to the "operator boundary condition for the given pointset.
 
 ## Usage
 
-The current code is designed for the rectangular sample with spherical inhomogeneities. However, it can be quickly extended to the complex structures with arbitrary inhomogeneities. To run this code, we need know the constitutive relations, the loading curve and the speckle information. Fpr the first one, we need the balance of force and boundary conditions. The latter two terms can either be obtained from the real experiment or from the FEM simulations.
+The existing code is designed to work with a rectangular sample containing multiple spherical inhomogeneities. For a comprehensive understanding of its functionalities and capabilities, you can refer to the paper authored by Siyuan Song and Hanxun Jin in 2023, [Siyuan Song, Hanxun Jin (2023)](https://arxiv.org/pdf/2308.15640.pdf). Importantly, it is worth noting that the current code is easily adaptable to accommodate complex structures featuring arbitrary inhomogeneities.
 
 ### For the example.
 The current example provided here is based on the section 3.3 in the references. To run the code, please download the folder "Data", "Template" and the file "Run.py", and put them in the same folder. In "Run.py", you could set the noise value of speckle data, the number of epochs, the number of speckles and the number of tests you want to make. The training speed is about 50 epochs/second. During the trainning, you could see a file "variable_history", which prints the material parameters as a function of the trainning epochs. 
