@@ -6,7 +6,6 @@ __all__ = [
     "NeumannBC",
     "RobinBC",
     "PeriodicBC",
-    "ssyBC",
     "OperatorBC",
     "PointSetBC",
 ]
@@ -93,27 +92,7 @@ class NeumannBC(BC):
         values = self.func(X, beg, end)
         return self.normal_derivative(X, inputs, outputs, beg, end) - values
 
-# Revised by Siyuan Song
-class RobinBC_Xingchi(BC):
-    """Dirichlet boundary condition for a set of points.
-    Compare the output (that associates with `points`) with `values` (target data).
-
-    Args:
-        points: An array of points where the corresponding target values are known and used for training.
-        values: An array of values that gives the exact solution of the problem.
-        component: The output component satisfying this BC.
-    """
-    def __init__(self, points, func, values):
-        self.points = np.array(points, dtype=config.real(np))
-        self.func = func
-        self.values = bkd.as_tensor(values, dtype=config.real(bkd.lib))
-
-    def collocation_points(self, X):
-        return self.points
-
-    def error(self, X, inputs, outputs, beg, end):
-        return self.func(inputs, outputs, X)[beg:end] - self.values
-#
+# Revised by Siyuan Song, this condition serves as the boundary integration condition, which conducts domain integration for specific points across a sequence of time steps.
 class PeriodicBC(BC):
     """Dirichlet boundary condition for a set of points.
     Compare the output (that associates with `points`) with `values` (target data).
@@ -142,18 +121,18 @@ class PeriodicBC(BC):
         return self.points
 
     def error(self, X, inputs, outputs, beg, end):
-        #
+        # Estimated stress - Experimental measured stress
         sol_raw = self.func(inputs, outputs, X)[beg:end] - self.values
         #
         sol = 0
-        #
+        # the mean absolute error over the given time steps.
         for i in range(self.num_time):
             start_index = self.num_points * i
             end_index   = self.num_points * (i + 1)
             sol = sol + tf.math.abs( tf.math.reduce_mean(sol_raw[start_index:end_index]) )
         sol = sol/self.num_time
         return sol
-#
+# Revised by Siyuan Song. The operator boundary condition on the given points.
 class RobinBC(BC):
     """Dirichlet boundary condition for a set of points.
     Compare the output (that associates with `points`) with `values` (target data).
